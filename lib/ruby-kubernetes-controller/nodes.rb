@@ -23,7 +23,7 @@ module Nodes
         http.request(request)
       end
 
-      return response.body
+      return response
 
     rescue Errno::ECONNREFUSED
       raise "Connection for host #{uri.hostname} refused"

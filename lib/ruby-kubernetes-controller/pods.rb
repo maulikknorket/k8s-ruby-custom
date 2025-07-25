@@ -29,7 +29,7 @@ module Pods
       response = Net::HTTP.start(uri.hostname, uri.port, req_options) do |http|
         http.request(request)
       end
-      return response.body
+      return response
 
     rescue Errno::ECONNREFUSED
       raise "Connection for host #{uri.hostname} refused"
@@ -50,7 +50,7 @@ module Pods
       response = Net::HTTP.start(uri.hostname, uri.port, req_options) do |http|
         http.request(request)
       end
-      return response.body
+      return response
 
     rescue Errno::ECONNREFUSED
       raise "Connection for host #{uri.hostname} refused"
@@ -71,7 +71,7 @@ module Pods
       response = Net::HTTP.start(uri.hostname, uri.port, req_options) do |http|
         http.request(request)
       end
-      return response.body
+      return response
 
     rescue Errno::ECONNREFUSED
       raise "Connection for host #{uri.hostname} refused"
@@ -96,7 +96,7 @@ module Pods
       response = Net::HTTP.start(uri.hostname, uri.port, req_options) do |http|
         http.request(request)
       end
-      return response.body
+      return response
 
     rescue Errno::ECONNREFUSED
       raise "Connection for host #{uri.hostname} refused"
@@ -119,7 +119,7 @@ module Pods
       response = Net::HTTP.start(uri.hostname, uri.port, req_options) do |http|
         http.request(request)
       end
-      return response.body
+      return response
 
     rescue Errno::ECONNREFUSED
       raise "Connection for host #{uri.hostname} refused"
@@ -140,7 +140,7 @@ module Pods
       response = Net::HTTP.start(uri.hostname, uri.port, req_options) do |http|
         http.request(request)
       end
-      return response.body
+      return response
     rescue Errno::ECONNREFUSED
       raise "Connection for host #{uri.hostname} refused"
     end
@@ -167,7 +167,7 @@ module Pods
       response = Net::HTTP.start(uri.hostname, uri.port, req_options) do |http|
         http.request(request)
       end
-      return response.body
+      return response
 
     rescue Errno::ECONNREFUSED
       raise "Connection for host #{uri.hostname} refused"
@@ -191,7 +191,7 @@ module Pods
       response = Net::HTTP.start(uri.hostname, uri.port, req_options) do |http|
         http.request(request)
       end
-      return response.body
+      return response
     rescue Errno::ECONNREFUSED
       raise "Connection for host #{uri.hostname} refused"
     end
@@ -218,7 +218,7 @@ module Pods
       response = Net::HTTP.start(uri.hostname, uri.port, req_options) do |http|
         http.request(request)
       end
-      return response.body
+      return response
 
     rescue Errno::ECONNREFUSED
       raise "Connection for host #{uri.hostname} refused"
