@@ -19,6 +19,7 @@ require_relative 'jobs'
 require_relative 'cronjob'
 require_relative 'utilities'
 require_relative 'secrets'
+require_relative 'restores'
 
 # Part of the RubyKubernetesController module
 module RubyKubernetesController
@@ -42,6 +43,7 @@ module RubyKubernetesController
     include CronJobs
     include Utilities
     include Secrets
+    include Restores
 
     # Constructor
     def initialize(endpoint, bearer_token, ssl = true, yaml = false, ca_cert = nil)
