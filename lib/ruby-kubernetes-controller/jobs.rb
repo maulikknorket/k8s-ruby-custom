@@ -37,8 +37,8 @@ module Jobs
     end
     
     # Get all Jobs
-    def get_all_jobs
-        extension = "/apis/batch/v1/jobs"
+    def get_all_jobs(cronjob_name)
+        extension = "/apis/batch/v1/jobs?labelSelector=cronjob-name=#{cronjob_name}"
         
         uri = prepareURI(@endpoint, extension)
         
